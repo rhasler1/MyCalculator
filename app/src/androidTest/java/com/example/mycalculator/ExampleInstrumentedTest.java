@@ -16,6 +16,18 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 // TODO: use mockito here
+
+
+
+    /*
+    protected CalculatorAdapter model2;
+
+    * model2.x = 5; model2.y = 0;
+        model2.doDiv(v);
+        assertEquals(model2.t1.toString(), "Please enter required numbers");
+    *
+    * */
+
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
     @Test
