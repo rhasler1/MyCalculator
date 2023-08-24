@@ -14,15 +14,15 @@ public class CalculatorAdapter extends AppCompatActivity {
     *
     * */
 
-    private MainActivity model;
+    private DefaultCalculator model;
 
-    protected void setModel(final MainActivity model) { this.model = model; }
+    protected void setModel(final DefaultCalculator model) { this.model = model; }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.setModel(new MainActivity());
+        this.setModel(new DefaultCalculator());
     }
 
     protected EditText e1;

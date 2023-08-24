@@ -1,13 +1,6 @@
 package com.example.mycalculator;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
-
-public class MainActivity implements Calculator {
+public class DefaultCalculator implements Calculator {
 
     /* method to add */
     public int doSum(int x, int y) {
