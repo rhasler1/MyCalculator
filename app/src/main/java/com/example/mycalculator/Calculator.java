@@ -1,13 +1,13 @@
 package com.example.mycalculator;
 
 
-public interface Calculator {
+public interface Calculator<Result> {
 
-    int doSum(int x, int y);
-    int doSub(int x, int y);
-    int doMul(int x, int y);
-    int doDiv(int x, int y);
-    int doMod(int x, int y);
-    int doPow(int x, int y);
+    Result doSum(int x, int y);
+    Result doSub(int x, int y);
+    Result doMul(int x, int y);
+    Result doDiv(int x, int y);
+    Result doMod(int x, int y);
+    Result doPow(int x, int y);
 
 }
