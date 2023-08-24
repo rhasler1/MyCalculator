@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity {
+public class MainActivity implements Calculator {
 
     /* method to add */
     public int doSum(int x, int y) {
