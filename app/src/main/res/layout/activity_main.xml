@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#8BC34A"
     android:backgroundTint="@android:color/darker_gray"
-    tools:context=".MainActivity">
+    tools:context=".CalculatorAdapter">
 
     <!-- Text View to display our basic heading of "calculator"-->
     <TextView
