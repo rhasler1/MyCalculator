@@ -8,10 +8,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CalculatorAdapter extends AppCompatActivity {
+
     /*
     * include onClick methods
     * as well as getNumbers
-    *
     * */
 
     private DefaultCalculator model;
@@ -74,18 +74,17 @@ public class CalculatorAdapter extends AppCompatActivity {
     public void doSum(View v) {
         if (getNumbers()) {
             double result = this.model.doSum(getX(), getY());
-            //t1.setText(Double.toString(result));
             t1.setText(String.format(Double.toString(result)));
         } else {
             String result = "Please enter required numbers";
             t1.setText(result);
+
         }
     }
 
     public void doSub(View v) {
         if (getNumbers()) {
             double result = this.model.doSub(getX(), getY());
-            //t1.setText(Double.toString(result));
             t1.setText(String.format(Double.toString(result)));
 
         } else {
@@ -98,7 +97,6 @@ public class CalculatorAdapter extends AppCompatActivity {
     public void doMul(View v) {
         if (getNumbers()) {
             double result = this.model.doMul(getX(), getY());
-            //t1.setText(Double.toString(result));
             t1.setText(String.format(Double.toString(result)));
 
         } else {
@@ -111,7 +109,6 @@ public class CalculatorAdapter extends AppCompatActivity {
     public void doDiv(View v) {
         if (getNumbers() && y != 0) {
             double result = this.model.doDiv(getX(), getY());
-            //t1.setText(Double.toString(result));
             t1.setText(String.format(Double.toString(result)));
 
         } else {
@@ -124,7 +121,6 @@ public class CalculatorAdapter extends AppCompatActivity {
     public void doMod(View v) {
         if (getNumbers() && y != 0) {
             double result = this.model.doMod(getX(), getY());
-            //t1.setText(Double.toString(result));
             t1.setText(String.format(Double.toString(result)));
 
         } else {
@@ -137,7 +133,6 @@ public class CalculatorAdapter extends AppCompatActivity {
     public void doPow(View v) {
         if (getNumbers()) {
             double result = this.model.doPow(getX(), getY());
-            //t1.setText(Double.toString(result));
             t1.setText(String.format(Double.toString(result)));
 
         } else {
@@ -150,10 +145,12 @@ public class CalculatorAdapter extends AppCompatActivity {
     /* method to clear num1 */
     public void clearTextNum1(View v){
         e1.getText().clear();
+
     }
 
     /* method to clear num2 */
     public void clearTextNum2(View v) {
         e2.getText().clear();
+
     }
 }
