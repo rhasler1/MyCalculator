@@ -30,6 +30,7 @@
 
     <!-- Edit Text View to input the values -->
     <EditText
+        android:labelFor="@+id/num1"
         android:id="@+id/num1"
         android:layout_width="364dp"
         android:layout_height="28dp"
@@ -40,7 +41,7 @@
         android:background="@android:color/white"
         android:ems="10"
         android:onClick="clearTextNum1"
-        android:inputType="number"
+        android:inputType="numberDecimal|numberSigned"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +59,7 @@
         android:background="@android:color/white"
         android:ems="10"
         android:onClick="clearTextNum2"
-        android:inputType="number"
+        android:inputType="numberDecimal|numberSigned"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

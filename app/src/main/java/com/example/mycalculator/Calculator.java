@@ -3,11 +3,11 @@ package com.example.mycalculator;
 
 public interface Calculator<Result> {
 
-    Result doSum(int x, int y);
-    Result doSub(int x, int y);
-    Result doMul(int x, int y);
-    Result doDiv(int x, int y);
-    Result doMod(int x, int y);
-    Result doPow(int x, int y);
+    Result doSum(double x, double y);
+    Result doSub(double x, double y);
+    Result doMul(double x, double y);
+    Result doDiv(double x, double y);
+    Result doMod(double x, double y);
+    Result doPow(double x, double y);
 
 }

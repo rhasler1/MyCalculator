@@ -28,8 +28,8 @@ public class CalculatorAdapter extends AppCompatActivity {
     protected EditText e1;
     protected EditText e2;
     protected TextView t1;
-    protected int x;
-    protected int y;
+    protected double x;
+    protected double y;
 
     public boolean getNumbers() {
 
@@ -63,18 +63,19 @@ public class CalculatorAdapter extends AppCompatActivity {
             return false;
         }
 
-        x = Integer.valueOf(s1);
-        y = Integer.valueOf(s2);
+        x = Double.valueOf(s1);
+        y = Double.valueOf(s2);
         return true;
     }
 
-    protected int getX() { return this.x; }
-    protected int getY() { return this.y; }
+    protected double getX() { return this.x; }
+    protected double getY() { return this.y; }
 
     public void doSum(View v) {
         if (getNumbers()) {
-            int result = this.model.doSum(getX(), getY());
-            t1.setText(Integer.toString(result));
+            double result = this.model.doSum(getX(), getY());
+            //t1.setText(Double.toString(result));
+            t1.setText(String.format(Double.toString(result)));
         } else {
             String result = "Please enter required numbers";
             t1.setText(result);
@@ -83,8 +84,9 @@ public class CalculatorAdapter extends AppCompatActivity {
 
     public void doSub(View v) {
         if (getNumbers()) {
-            int result = this.model.doSub(getX(), getY());
-            t1.setText(Integer.toString(result));
+            double result = this.model.doSub(getX(), getY());
+            //t1.setText(Double.toString(result));
+            t1.setText(String.format(Double.toString(result)));
 
         } else {
             String result = "Please enter required numbers";
@@ -95,8 +97,9 @@ public class CalculatorAdapter extends AppCompatActivity {
 
     public void doMul(View v) {
         if (getNumbers()) {
-            int result = this.model.doMul(getX(), getY());
-            t1.setText(Integer.toString(result));
+            double result = this.model.doMul(getX(), getY());
+            //t1.setText(Double.toString(result));
+            t1.setText(String.format(Double.toString(result)));
 
         } else {
             String result = "Please enter required numbers";
@@ -107,8 +110,9 @@ public class CalculatorAdapter extends AppCompatActivity {
 
     public void doDiv(View v) {
         if (getNumbers() && y != 0) {
-            int result = this.model.doDiv(getX(), getY());
-            t1.setText(Integer.toString(result));
+            double result = this.model.doDiv(getX(), getY());
+            //t1.setText(Double.toString(result));
+            t1.setText(String.format(Double.toString(result)));
 
         } else {
             String result = "Please enter required numbers";
@@ -119,8 +123,9 @@ public class CalculatorAdapter extends AppCompatActivity {
 
     public void doMod(View v) {
         if (getNumbers() && y != 0) {
-            int result = this.model.doMod(getX(), getY());
-            t1.setText(Integer.toString(result));
+            double result = this.model.doMod(getX(), getY());
+            //t1.setText(Double.toString(result));
+            t1.setText(String.format(Double.toString(result)));
 
         } else {
             String result = "Please enter required numbers";
@@ -131,8 +136,9 @@ public class CalculatorAdapter extends AppCompatActivity {
 
     public void doPow(View v) {
         if (getNumbers()) {
-            int result = this.model.doPow(getX(), getY());
-            t1.setText(Integer.toString(result));
+            double result = this.model.doPow(getX(), getY());
+            //t1.setText(Double.toString(result));
+            t1.setText(String.format(Double.toString(result)));
 
         } else {
             String result = "Please enter required numbers";

@@ -1,40 +1,40 @@
 package com.example.mycalculator;
 
-public class DefaultCalculator implements Calculator<Integer> {
+public class DefaultCalculator implements Calculator<Double> {
 
     /* method to add */
-    public Integer doSum(int x, int y) {
-        int sum = x + y;
+    public Double doSum(double x, double y) {
+        double sum = x + y;
         return sum;
     }
 
     /* method to subtract */
-    public Integer doSub(int x, int y) {
-        int dif = x - y;
+    public Double doSub(double x, double y) {
+        double dif = x - y;
         return dif;
     }
 
     /* method to multiply */
-    public Integer doMul(int x, int y) {
-        int prod = x * y;
+    public Double doMul(double x, double y) {
+        double prod = x * y;
         return prod;
     }
 
     /* method to divide */
-    public Integer doDiv(int x, int y) {
-        int quot = x / y;
+    public Double doDiv(double x, double y) {
+        double quot = x / y;
         return quot;
     }
 
     /* method to find remainder/modulus */
-    public Integer doMod(int x, int y) {
-        int mod = x % y;
+    public Double doMod(double x, double y) {
+        double mod = x % y;
         return mod;
     }
 
     /* method to find power of result */
-    public Integer doPow(int x, int y) {
-        int prod = (int)Math.pow(x,y);
+    public Double doPow(double x, double y) {
+        double prod = Math.pow(x,y);
         return prod;
     }
 
