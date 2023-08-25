@@ -1,7 +1,7 @@
 # MyCalculator
 Programming a calculator using Android Studio...
 
-Functionality to add as of 8/24/2023 ... 6:05 pm:
+Functionality to add as of 8/24/2023 ... 10:50 pm:
 
     1. testing
         (DONE)model testing
@@ -11,13 +11,11 @@ Functionality to add as of 8/24/2023 ... 6:05 pm:
 
     3. (DONE)implement interface
 
-    4. negative numbers
+    4. (DONE)negative numbers
         Not sure yet.
 
-    5. decimals (switch from integer to double)
+    5. (DONE)decimals (switch from integer to double)
         use Double
 
     6. add more operations
-        Not sure yet.
-
-    7. (4,5,6) <- Create another "DefaultCalculator implementation"
+    
